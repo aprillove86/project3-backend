@@ -1,16 +1,12 @@
 ///////////////////////////////
 // DEPENDENCIES
 ////////////////////////////////
-// get .env variables
 require('dotenv').config()
 // pull PORT from .env, give default value of 8000
 const { PORT = 8000, DATABASE_URL } = process.env
-// const PORT = process.env || 3001
-// import express from 'express
 const express = require('express')
-// create application object 
 const app = express()
-// import mongoose
+const sneakerSeed = requre('./sneakers')
 const mongoose = require('mongoose')
 const cors = require("cors")
 const morgan = require("morgan")
