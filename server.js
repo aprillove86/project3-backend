@@ -6,7 +6,7 @@ require('dotenv').config()
 const { PORT = 8000, DATABASE_URL } = process.env
 const express = require('express')
 const app = express()
-const sneakerSeed = requre('./sneakers')
+const sneakerSeed = require('./sneakers')
 const mongoose = require('mongoose')
 const cors = require("cors")
 const morgan = require("morgan")
