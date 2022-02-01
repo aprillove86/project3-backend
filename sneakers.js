@@ -1,5 +1,3 @@
-const { use } = require("express/lib/application");
-
 const sneakerSeed = [
     {
         name: "Travis Scott SB Dunk Low",

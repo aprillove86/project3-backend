@@ -33,7 +33,7 @@ app.get('/', (req,res) => {
  const SneakerSchema = new mongoose.Schema({
      name: String, 
      brand: String,
-     size: Number,
+     size: String,
      img: String,
  })
  const Sneaker = mongoose.model('Sneaker', SneakerSchema)
@@ -46,14 +46,20 @@ app.get('/', (req,res) => {
   app.use(express.json()) // parse json bodies
   
 
+  //seed route
+  app.get('/sneakers/seed', async (req, res) => {
+    await Sneaker.deleteMany({}) //deleted everything in the database
+    await Sneaker.create(sneakerSeed); //created new data from the seed data above. 
+    res.redirect('/sneakers')
+    })
+
+
   //index route
   app.get("/sneakers", async (req, res) => {
     try {
-      // send all people
-      res.json(await Sneaker.find({}))
+            res.json(await Sneaker.find({}))
     } catch (error) {
-      //send error
-      res.status(400).json(error)
+          res.status(400).json(error)
     }
   })
 
