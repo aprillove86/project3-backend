@@ -24,10 +24,10 @@ const sneakerSeed = [
         img: 'https://www.newjordans2021.com/wp-content/uploads/2021/12/adidas-Yeezy-500-Clay-Brown-For-Sale.jpg'
     },
     {
-        name: "990v3 Joe Freshgoods Outside Clothes",
+        name: "990v3 x Salehe Bembury",
         brand: "New Balance",
         size: "10.5 US",
-        img: 'https://sneakernews.com/wp-content/uploads/2021/02/Nike-Dunk-Low-DD1872-100-Release-Info-4.jpg'
+        img: 'https://i.ibb.co/rcGkYjR/nadya-nada-YMU2-RNYj-L0-M-unsplash.jpg'
     },
     {
         name: "Billie Eilish Retro 15",
